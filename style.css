@@ -194,6 +194,11 @@ header .container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
+  margin-top: -4rem;
+}
+
+.showcase-area .container .left{
+  margin-top: -3rem;
 }
 
 .big-title {

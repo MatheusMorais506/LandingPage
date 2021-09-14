@@ -3,6 +3,7 @@
 .light {
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
+  --newColor:#106ab6;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
   --darkTwo: #45424b;
@@ -88,7 +89,8 @@ header .container {
 }
 
 .logo img {
-  width: 40px;
+  width: 170px;
+  height:160px;
   margin-right: 0.6rem;
   margin-top: -0.6rem;
 }
@@ -98,12 +100,14 @@ header .container {
   font-size: 1.55rem;
   line-height: 1.2;
   font-weight: 700;
+  margin-top: -3rem;
 }
 
 .links ul {
   display: flex;
   list-style: none;
   align-items: center;
+  margin-top: -3rem;
 }
 
 .links a {
@@ -129,7 +133,7 @@ header .container {
 }
 
 .btn:hover {
-  background-color: var(--hoverColor);
+  background-color: var(--newColor);
   transform: scale(1) !important;
 }
 
@@ -212,7 +216,9 @@ header .container {
 }
 
 .person {
-  width: 123%;
+  width: 90%;
+  height:35rem;
+  margin-bottom:5rem;
   transform: translate(15%, 25px);
 }
 
@@ -257,10 +263,10 @@ header .container {
 .shape {
   position: absolute;
   z-index: 0;
-  width: 500px;
-  bottom: -180px;
-  left: -15px;
-  opacity: 0.1;
+  width:750px;
+  bottom: -500px;
+  left:-180px;
+  opacity: 0.3;
 }
 
 .copy {
@@ -280,7 +286,7 @@ header .container {
   }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
   .hamburger-menu {
     display: flex;
   }
@@ -369,12 +375,12 @@ header .container {
   }
 
   .shape {
-    bottom: -180px;
-    left: -150px;
+    bottom: -500px;
+    left: -180px;
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 500px) {
   .container {
     padding: 0 1.5rem;
   }
@@ -389,5 +395,10 @@ header .container {
 
   .showcase-area .btn {
     font-size: 0.8rem;
+  }
+
+  .shape{
+    bottom:-500px;
+    left: -180px;
   }
 }
